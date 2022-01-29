@@ -23,12 +23,12 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 
             <Switch
                 onChange={toggleTheme}
-                checked={title == 'dark'}
+                checked={title === 'dark'}
                 checkedIcon={false}
                 uncheckedIcon={false}
-                height={10}
-                width={40}
-                handleDiameter={20}
+                height={20}
+                width={35}
+                handleDiameter={15}
                 offColor={shade(0.15, colors.off)}
                 onColor={colors.on}
             />
