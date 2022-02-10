@@ -5,7 +5,7 @@ export default {
         primary: '#333',
         secundary: '#d1d1d1',
 
-        background: '#222',
+        background: 'linear-gradient(to bottom,  #3d3d3d 0%,#0e0e0e 100%)',
         text: '#fff',
 
         on: '#d1d1d1',

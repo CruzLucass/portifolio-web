@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projetos from './components/Projetos';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -25,6 +26,7 @@ function App() {
         <About />
         <Projetos />
         <GlobalStyle />
+        <Footer />
       </div>
     </ThemeProvider>
   );

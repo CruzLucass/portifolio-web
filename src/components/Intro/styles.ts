@@ -7,7 +7,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     text-align:center;
-    margin-top: 60px;
+    margin-top: 80px;
+    height:100vh;
 `;
 
 export const Title = styled.h1`
