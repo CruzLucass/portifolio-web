@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projetos from './components/Projetos';
+import Contato from './components/Contato';
 import Footer from './components/Footer';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <About />
         <Projetos />
         <GlobalStyle />
+        <Contato />
         <Footer />
       </div>
     </ThemeProvider>
