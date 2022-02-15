@@ -47,20 +47,78 @@ export const Row = styled.div`
 `;
 
 export const FooterLink = styled.a`
-    color: ${props => props.theme.colors.text};
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-decoration: none;
+  margin-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  cursor:pointer;
 
-&:hover {
-    color: ${props => props.theme.colors.secundary};
-	transition: 200ms ease-in;
-}
+    &:hover {
+        color: ${props => props.theme.colors.text};
+	    transition: 200ms ease-in;
+        opacity: 0.8;
+    }
+
+    img {
+            width: 40px;
+            height: 40px;
+        }
+        
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.text};
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+ 
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+    }
+        /* Show the tooltip text when you mouse over the tooltip container */
+    &:hover .tooltiptext {
+        visibility: visible;
+        bottom:45px;
+        left:60px;
+    }
+
 `;
 
 export const Heading = styled.p`
-    font-size: 24px;
+    font-size: 16px;
     color: ${props => props.theme.colors.text};
     margin-bottom: 40px;
     font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+    img {
+            width: 70px;
+            height: 70px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.text};
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+ 
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+    }
+        /* Show the tooltip text when you mouse over the tooltip container */
+    &:hover .tooltiptext {
+        visibility: visible;
+        top:65px;
+        left: -15px;
+        right: 0px;
+    }
 `;

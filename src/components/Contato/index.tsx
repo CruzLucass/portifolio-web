@@ -9,59 +9,76 @@ import {
     Heading,
 } from "./styles";
 
+import github from '../../assets/img/github.png'
+import instagram from '../../assets/img/instagram.png'
+import linkedin from '../../assets/img/linkedin.png'
+import twitter from '../../assets/img/twitter.png'
+import pino from '../../assets/img/pin-de-localizacao.png'
+import whats from '../../assets/img/whatsapp.png'
+import address from '../../assets/img/address.png'
+import social from '../../assets/img/social-network.png'
+import youtube from '../../assets/img/youtube.png'
+
 const Contato = () => {
     return (
         <Box>
             <Title>Contato</Title>
+            <Heading>
+                <span className="tooltiptext">
+                    Contatos
+                </span>
+                <img src={social} alt='Mídias Sociais' />
+            </Heading>
             <Container>
                 <Row>
-                    <Column>
-                        <Heading>Localização</Heading>
-                        <FooterLink href="#">Alfenas</FooterLink>
-                        <FooterLink href="#">Minas Gerais</FooterLink>
-                        <FooterLink href="#">Brasil</FooterLink>
-                    </Column>
-                    <Column>
-                        <Heading>Envie um Email</Heading>
-                        <FooterLink href="#">lucaas-cruuz@live.com</FooterLink>
-                    </Column>
-                    <Column>
-                        <Heading>Contato ou WhatsApp</Heading>
-                        <FooterLink href="#">(+55) 35 99821-3599</FooterLink>
-                        <FooterLink href="#">ou</FooterLink>
-                        <FooterLink href="#">(+55) 35 99867-0259</FooterLink>
-                    </Column>
-                    <Column>
-                        <Heading>Social Media</Heading>
-                        <FooterLink href="#">
-                            <i className="fab fa-facebook-f">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Linkedin
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-instagram">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Instagram
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-twitter">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Twitter
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-youtube">
-                                <span style={{ marginLeft: "10px" }}>
-                                    GitHub
-                                </span>
-                            </i>
-                        </FooterLink>
-                    </Column>
+                    <FooterLink href="https://github.com/CruzLucass" target="_blank">
+                        <span className="tooltiptext">
+                            Git Hub
+                        </span>
+                        <img src={github} alt='github' />
+                    </FooterLink>
+                    <FooterLink href="https://www.linkedin.com/in/lucas-cruzz/" target="_blank">
+                        <span className="tooltiptext">
+                            Linkedin
+                        </span>
+                        <img src={linkedin} alt='linkedin' />
+                    </FooterLink>
+                    <FooterLink href="https://www.instagram.com/cruzlukao/" target="_blank">
+                        <span className="tooltiptext">
+                            Instagram
+                        </span>
+                        <img src={instagram} alt='instagram' />
+                    </FooterLink>
+                    <FooterLink href="https://api.whatsapp.com/send?phone=5535998670259" target="_blank">
+                        <span className="tooltiptext">
+                            Whatsapp
+                        </span>
+                        <img src={whats} alt='WhatsApp' />
+                    </FooterLink>
+                    <FooterLink href="https://twitter.com/CruzLukao" target="_blank">
+                        <span className="tooltiptext">
+                            Twitter
+                        </span>
+                        <img src={twitter} alt='twitter' />
+                    </FooterLink>
+                    <FooterLink href="mailto:lucaas-cruuz@live.com" target="_blank">
+                        <span className="tooltiptext">
+                            E-mail
+                        </span>
+                        <img src={address} alt='E-mail' />
+                    </FooterLink>
+                    <FooterLink target="_blank">
+                        <span className="tooltiptext">
+                            Localização
+                        </span>
+                        <img src={pino} alt='localização' />
+                    </FooterLink>
+                    <FooterLink target="_blank">
+                        <span className="tooltiptext">
+                            Youtube
+                        </span>
+                        <img src={youtube} alt='Youtube' />
+                    </FooterLink>
                 </Row>
             </Container>
         </Box>

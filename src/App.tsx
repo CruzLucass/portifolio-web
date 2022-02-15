@@ -26,9 +26,11 @@ function App() {
         <Intro />
         <About />
         <Projetos />
-        <GlobalStyle />
         <Contato />
         <Footer />
+
+
+        <GlobalStyle />
       </div>
     </ThemeProvider>
   );
